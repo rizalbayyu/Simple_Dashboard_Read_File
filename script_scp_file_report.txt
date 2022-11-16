@@ -1,0 +1,3 @@
+!#/bin/bash
+
+sudo scp /$path/$directory/serverTest_report_backup_$date_now.txt host@serverHost:/file/web
