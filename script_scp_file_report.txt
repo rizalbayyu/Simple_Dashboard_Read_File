@@ -1,3 +1,6 @@
-!#/bin/bash
+#!/bin/bash
+date_now=$(date --date="now" +%Y-%m-%d)
 
-sudo scp /$path/$directory/serverTest_report_backup_$date_now.txt host@serverHost:/file/web
+scp /$dir/serverBackup_report_backup_$date_now.txt $Host@$IPHost:$Destination
+
+rm -f /$dir/serverBackup_report_backup_$date_now.txt
